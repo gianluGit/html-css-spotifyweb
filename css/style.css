@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  /* debug */
+  background-color: pink;
+}
+
+main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* navbar */
+main #navbar-left {
+  width: 230px;
+  height: calc(100vh - 90px);
+  float: left;
+  overflow-y: hidden;
+  /* debug */
+  border: 1px solid black;
+}
+
+#navbar-left .navbar-logo img {
+  max-width: 100%;
+  height: 40px;
+}
+
+#navbar-left .navbar-logo {
+  padding: 10px 0 0 10px;
+}
+
+#navbar-left .hsl {
+  margin: 10px 0 10px 10px;
+}
+
+#navbar-left .hsl img {
+  width: 10%;
+  height: 20px;
+}
+
+#navbar-left .hsl a {
+  text-decoration: none;
+  color: grey;
+}
+
+#navbar-left .navbar-playlist h5 {
+  margin-left: 10px;
+  color: #fff;
+}
+
+#navbar-left .crea-playlist-flex a:first-child {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: grey;
+}
+
+#navbar-left .crea-playlist-flex {
+  display: flex;
+  padding: 10px 0 15px 10px;
+}
+
+#navbar-left .crea-playlist-flex a:last-child {
+  display: inline-block;
+  color: gray;
+  text-decoration: none;
+  align-self: center;
+  margin-left: 5px;
+}
+
+#navbar-left .nome-playlist-links {
+  padding-left: 10px;
+}
+
+#navbar-left .nome-playlist-links {
+  height: 200px;
+  overflow: scroll;
+}
+
+#navbar-left .nome-playlist-links ul li {
+  margin-bottom: 15px;
+}
+
+#navbar-left .nome-playlist-links ul li a {
+  text-decoration: none;
+  color: grey;
+}
+
+#navbar-left .navbar-profile-up {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  border-bottom: 1px solid grey;
+}
+
+#navbar-left .navbar-profile #download-icon {
+  height: 20px;
+}
+
+#navbar-left .navbar-profile-up a:last-child {
+  color: grey;
+  text-decoration: none;
+  align-self: center;
+  margin-left: 5px;
+}
+
+#navbar-left .navbar-profile-down {
+  display: flex;
+  padding-top: 10px;
+  width: 90%;
+  margin: auto;
+}
+
+#navbar-left .navbar-profile-down img {
+  height: 30px;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+#navbar-left .navbar-profile-down a:last-child {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  align-self: center;
+  margin-left: 5px;
+}
+
+#navbar-left .navbar-container-flex {
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main #main-content {
+  width: calc(100% - 230px);
+  height: calc(100vh - 90px);
+  float: left;
+  /* debug */
+  border: 1px solid black;
+}
+
+footer .song-player {
+  height: 90px;
+  /* debug */
+  background-color: green;
+}
