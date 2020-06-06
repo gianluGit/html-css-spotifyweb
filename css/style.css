@@ -4,6 +4,48 @@
   box-sizing: border-box;
 }
 
+@media all and (min-width: 681px) {
+  #navbar-left .logo-none img, #navbar-left .home-none img, #navbar-left .search-none img, #navbar-left .library-none img {
+    display: none;
+  }
+
+  #navbar-left {
+    width: 230px;
+  }
+
+  #main-content {
+    width: calc(100% - 230px);
+  }
+
+  #navbar-left .navbar-profile .download-icon-none {
+    display: none;
+  }
+
+}
+
+/* media query xs */
+@media all and (max-width: 680px) {
+  #navbar-left .navbar-logo, #navbar-left .hsl, #navbar-left .navbar-playlist, #navbar-left .contenuto-navbar-bottom {
+    display: none;
+  }
+
+  #navbar-left {
+    width: 60px;
+  }
+
+  #main-content {
+    width: calc(100% - 60px);
+  }
+
+
+}
+
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  /* #main-content .card {
+    width: 20%;
+  } */
+}
+
 .container {
   width: 100%;
   height: 100vh;
@@ -19,12 +61,17 @@ main::after {
 
 /* navbar */
 main #navbar-left {
-  width: 230px;
+  /* width: 230px; */
   height: calc(100vh - 90px);
   float: left;
   overflow-y: hidden;
   /* debug */
   border: 1px solid black;
+}
+
+#navbar-left .logo-none img, #navbar-left .home-none img, #navbar-left .search-none img, #navbar-left .library-none img {
+  width: 50px;
+  height: 50px;
 }
 
 #navbar-left .navbar-logo img {
@@ -86,6 +133,7 @@ main #navbar-left {
 
 #navbar-left .nome-playlist-links ul li {
   margin-bottom: 15px;
+  list-style: none;
 }
 
 #navbar-left .nome-playlist-links ul li a {
@@ -100,8 +148,19 @@ main #navbar-left {
   border-bottom: 1px solid grey;
 }
 
+
 #navbar-left .navbar-profile #download-icon {
   height: 20px;
+}
+
+/* display none in lg */
+#navbar-left .navbar-profile .download-icon-none {
+  margin-top: 260px;
+}
+
+#navbar-left .navbar-profile .download-icon-none img {
+  width: 50px;
+  height: 50px;
 }
 
 #navbar-left .navbar-profile-up a:last-child {
@@ -133,20 +192,112 @@ main #navbar-left {
 }
 
 #navbar-left .navbar-container-flex {
-  height: 75%;
+  height: 72%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+
+/* contenuti principali */
 main #main-content {
-  width: calc(100% - 230px);
+  /* width: calc(100% - 230px); */
   height: calc(100vh - 90px);
   float: left;
+  overflow-y: auto;
   /* debug */
   border: 1px solid black;
 }
 
+
+#main-content .top-bar {
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#main-content .top-bar #upgrade-button {
+  height: 100%;
+  line-height: 80px;
+  text-align: right;
+  padding-right: 30px;
+}
+
+#main-content .top-bar #upgrade-button a {
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+#main-content .navbar-right {
+  text-align: center;
+  padding-top: 15px;
+}
+
+#main-content .navbar-right ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#main-content .navbar-right ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: grey;
+}
+
+#main-content h2 {
+  color: #fff;
+  padding: 10px 0 10px 10px;
+}
+
+/* container in flex */
+#main-content .card-container-flex {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+}
+
+#main-content .card {
+  width: 180px;
+  margin: 0 10px;
+  flex-grow: 0.2;
+}
+
+#main-content .card img {
+  width: 100%;
+  height: auto;
+}
+
+#main-content .card .album-title {
+  text-align: center;
+}
+
+#main-content .card .album-title h4 {
+  color: #fff;
+}
+
+#main-content .card .album-title span {
+  color: grey;
+}
+
+#main-content #padding-bottom {
+  padding-bottom: 0;
+}
+
+#main-content #album-subtitle {
+  display: block;
+  margin: 0 0 10px 10px;
+  color: grey;
+}
+
+#main-content .radius {
+  border-radius: 50%;
+}
+
+
+/* footer */
 footer .song-player {
   height: 90px;
   /* debug */
