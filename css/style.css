@@ -21,6 +21,13 @@
     display: none;
   }
 
+  #main-content .top-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 230px);
+  }
+
 }
 
 /* media query xs */
@@ -233,7 +240,7 @@ main #main-content {
 
 #main-content .navbar-right {
   text-align: center;
-  padding-top: 15px;
+  padding-top: 90px;
 }
 
 #main-content .navbar-right ul li {
@@ -298,8 +305,132 @@ main #main-content {
 
 
 /* footer */
-footer .song-player {
+footer .song-player-flex {
+  display: flex;
+  width: 100%;
   height: 90px;
   /* debug */
   background-color: green;
+}
+
+footer .player-left-flex, footer .player-central-flex, footer .player-right-flex {
+  /* debug */
+  border: 1px solid black;
+}
+
+footer .player-left-flex, footer .player-right-flex {
+  width: 20%;
+}
+
+footer .player-central-flex {
+  width: 60%;
+}
+
+/* parte sinistra di footer */
+footer .player-left-flex {
+  display: flex;
+  align-items: center;
+}
+
+footer .song-image {
+  margin-left: 10px;
+}
+
+footer .song-image img {
+  width: 40px;
+  height: auto;
+}
+
+footer .nome-brano {
+  margin-left: 5px;
+  width: 40%;
+}
+
+footer .nome-brano a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+footer .nome-brano span {
+  display: block;
+  font-size: 13px;
+  color: lightgrey;
+}
+
+footer .folder-heart {
+  margin-left: 5%;
+  width: 30%;
+}
+
+footer .folder-heart a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 5px;
+  font-size: 15px;
+}
+
+/* parte centrale di footer */
+footer .player-central-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+footer .button-player a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+}
+
+footer .button-player .play {
+  transition: 0.5s;
+}
+
+footer .button-player .play:hover {
+  transform: scale(1.5);
+}
+
+footer .player-row {
+  width: 100%;
+}
+
+footer .player-row span {
+  font-size: 12px;
+}
+
+footer .player-row #time-player {
+  display: inline-block;
+  width: 50%;
+  height: 3px;
+  background-color: lightgrey;
+  border-radius: 5px;
+  margin: 0 20px;
+}
+
+/* parte destra di footer */
+footer .player-right-flex {
+  display: flex;
+  align-items: center;
+}
+
+footer .player-right-flex .volume-flex {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+footer .player-right-flex a {
+  color: #fff;
+  margin-right: 10px;
+}
+
+
+footer .player-right-flex span {
+  display: inline-block;
+  width: 30%;
+  height: 3px;
+  background-color: lightgrey;
+  border-radius: 5px;
 }

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify Web</title>
   </head>
@@ -213,7 +214,44 @@
       </main>
 
       <footer>
-        <div class="song-player">
+        <div class="song-player-flex">
+          <div class="player-left-flex">
+            <div class="song-image">
+              <img src="img/stranger.jpeg" alt="song">
+            </div>
+
+            <div class="nome-brano">
+              <a href="#">Stranger Things</a>
+              <span>Nome Brano</span>
+            </div>
+
+            <div class="folder-heart">
+              <a href="#">&#9825;</a>
+              <a href="#"><i style="font-size:15px" class="fa">&#xf114;</i></a>
+            </div>
+          </div>
+          <div class="player-central-flex">
+            <div class="button-player">
+              <a href="#"><i style="font-size:18px" class="fa">&#xf0b2;</i></a>
+              <a href="#"><i style="font-size:18px" class="fa">&#xf048;</i></a>
+              <a href="#"><i style="font-size:24px" class="fa play">&#xf01d;</i></a>
+              <a href="#"><i style="font-size:18px" class="fa">&#xf051;</i></a>
+              <a href="#"><i style="font-size:18px" class="fa">&#xf066;</i></a>
+            </div>
+            <div class="player-row">
+              <span>0:25</span>
+              <span id="time-player"></span>
+              <span>4:35</span>
+            </div>
+          </div>
+          <div class="player-right-flex">
+            <div class="volume-flex">
+              <a href="#"><i style="font-size:15px" class="fa">&#xf233;</i></a>
+              <a href="#"><i style="font-size:15px" class="fa">&#xf108;</i></a>
+              <a href="#"><i style="font-size:15px" class="fa">&#xf028;</i></a>
+              <span></span>
+            </div>
+          </div>
 
         </div>
       </footer>
