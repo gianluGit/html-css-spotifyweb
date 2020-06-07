@@ -6,7 +6,7 @@
 
 /* media query da tablet in su */
 @media all and (min-width: 769px) {
-  #navbar-left .logo-none img, #navbar-left .home-none img, #navbar-left .search-none img, #navbar-left .library-none img {
+  #navbar-left .logo-none, #navbar-left .home-none, #navbar-left .search-none, #navbar-left .library-none {
     display: none;
   }
 
@@ -18,7 +18,7 @@
     width: calc(100% - 230px);
   }
 
-  #navbar-left .navbar-profile .download-icon-none {
+  #navbar-left .download-icon-none {
     display: none;
   }
 
@@ -96,8 +96,9 @@ main #navbar-left {
 }
 
 #navbar-left .logo-none img, #navbar-left .home-none img, #navbar-left .search-none img, #navbar-left .library-none img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
+  padding: 10px 0 0 10px;
 }
 
 #navbar-left .navbar-logo img {
@@ -186,13 +187,14 @@ main #navbar-left {
 }
 
 /* display none in lg */
-#navbar-left .navbar-profile .download-icon-none {
-  margin-top: 300px;
+#navbar-left .download-icon-none {
+  margin-top: 350px;
 }
 
-#navbar-left .navbar-profile .download-icon-none img {
-  width: 50px;
-  height: 50px;
+#navbar-left .download-icon-none img {
+  width: 40px;
+  height: 40px;
+  padding: 10px 0 0 10px;
 }
 
 #navbar-left .navbar-profile-up a:last-child {
@@ -302,6 +304,35 @@ main #main-content {
   margin: 0 10px;
 }
 
+/* layover */
+#main-content .card > a {
+  position: relative;
+  display: inline-block;
+}
+
+#main-content .card .layover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+#main-content .card .layover .layover-play {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#main-content .card > a:hover .layover {
+  display: block;
+}
+
+/* / */
 #main-content .card img {
   width: 100%;
   height: auto;
