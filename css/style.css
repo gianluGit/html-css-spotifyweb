@@ -6,7 +6,7 @@
 
 /* media query da tablet in su */
 @media all and (min-width: 769px) {
-  #navbar-left .logo-none, #navbar-left .home-none, #navbar-left .search-none, #navbar-left .library-none {
+  #navbar-left .logo-none, #navbar-left .home-none, #navbar-left .search-none, #navbar-left .library-none, #navbar-left .download-icon-none {
     display: none;
   }
 
@@ -18,15 +18,12 @@
     width: calc(100% - 230px);
   }
 
-  #navbar-left .download-icon-none {
-    display: none;
-  }
-
   #main-content .top-bar {
     position: fixed;
     top: 0;
     right: 0;
     width: calc(100% - 230px);
+    z-index: 900;
   }
 
   #main-content .navbar-right {
@@ -40,10 +37,18 @@
   #navbar-left .navbar-logo, #navbar-left .hsl, #navbar-left .navbar-playlist, #navbar-left .contenuto-navbar-bottom {
     display: none;
   }
-
+  /* navbar xs */
   #navbar-left {
     width: 60px;
   }
+
+  #navbar-left .navbar-xs-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 90px);
+  }
+
 
   #main-content {
     width: calc(100% - 60px);
@@ -62,6 +67,7 @@
     top: 0;
     right: 0;
     width: calc(100% - 60px);
+    z-index: 900;
   }
 
   #main-content .navbar-right {
@@ -186,10 +192,7 @@ main #navbar-left {
   height: 20px;
 }
 
-/* display none in lg */
-#navbar-left .download-icon-none {
-  margin-top: 350px;
-}
+/* navbar xs */
 
 #navbar-left .download-icon-none img {
   width: 40px;
@@ -225,13 +228,13 @@ main #navbar-left {
   margin-left: 5px;
 }
 
-#navbar-left .navbar-container-flex {
-  height: 72%;
+
+#navbar-left .navbar-lg-flex {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
 }
-
 
 /* contenuti principali */
 main #main-content {
@@ -275,7 +278,6 @@ main #main-content {
 
 #main-content .navbar-right {
   text-align: center;
-  /* padding-top: 90px; */
 }
 
 #main-content .navbar-right ul li {
