@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 /* media query xs */
 @media all and (max-width: 768px) {
   #navbar-left .navbar-logo, #navbar-left .hsl, #navbar-left .navbar-playlist, #navbar-left .contenuto-navbar-bottom {
@@ -276,9 +280,9 @@ main #navbar-left {
 #navbar-left .navbar-lg-flex #vertical-bar {
   position: absolute;
   left: 0;
-  top: 57px;
+  top: 55px;
   color: green;
-  font-size: 45px;
+  font-size: 30px;
 }
 
 #navbar-left .navbar-lg-flex a {
