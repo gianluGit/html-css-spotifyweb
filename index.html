@@ -41,6 +41,7 @@
           <!-- navbar lg -->
           <div class="navbar-lg-flex">
             <!-- primo flex item navbar lg -->
+            <span id="vertical-bar">&#124;</span>
             <div class="navbar-up-lg">
               <div class="navbar-logo">
                 <img src="img/logo.svg" alt="logo">
@@ -283,6 +284,7 @@
       <!-- footer -->
       <footer>
         <div class="song-player-flex">
+          <!-- parte sinistra di footer -->
           <div class="player-left-flex">
             <div class="song-image">
               <img src="img/stranger.jpeg" alt="song">
@@ -298,6 +300,7 @@
               <a href="#"><i style="font-size:15px" class="fa">&#xf114;</i></a>
             </div>
           </div>
+          <!-- parte centrale di footer -->
           <div class="player-central-flex">
             <div class="button-player">
               <a href="#"><i style="font-size:18px" class="fa">&#xf0b2;</i></a>
@@ -308,16 +311,23 @@
             </div>
             <div class="player-row">
               <span>0:25</span>
-              <span id="time-player"></span>
+              <span id="time-player">
+                <span></span>
+                <span id="player-ball"></span>
+              </span>
               <span>4:35</span>
             </div>
           </div>
+          <!-- parte destra di footer -->
           <div class="player-right-flex">
             <div class="volume-flex">
               <a href="#"><i style="font-size:15px" class="fa">&#xf233;</i></a>
               <a href="#"><i style="font-size:15px" class="fa">&#xf108;</i></a>
               <a href="#"><i style="font-size:15px" class="fa">&#xf028;</i></a>
-              <span></span>
+              <span id="volume-row">
+                <span></span>
+                <span id="volume-ball"></span>
+              </span>
             </div>
           </div>
 
